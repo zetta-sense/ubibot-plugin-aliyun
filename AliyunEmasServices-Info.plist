@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>config</key>
+	<dict>
+            <key>emas.appKey</key>
+            <string>24526132</string>
+            <key>emas.appSecret</key>
+            <string>55bbc27e0c2a1121efdd8b7c8c597623</string>
+            <key>emas.packageName</key>
+            <string>com.datadudu.ubibot</string>
+            <key>hotfix.idSecret</key>
+            <string>$config.value</string>
+            <key>hotfix.rsaSecret</key>
+            <string>$config.value</string>
+            <key>httpdns.accountId</key>
+            <string>112868</string>
+            <key>httpdns.secretKey</key>
+            <string>eafd216bc2de1eef6a18f5acb073b4fd</string>
+    	</dict>
+	<key>services</key>
+	<dict>
+		<key>httpdns_service</key>
+		<dict>
+			<key>status</key>
+			<integer>1</integer>
+			<key>version</key>
+			<string>${sdkVersions.httpdns}</string>
+		</dict>
+		<key>cps_service</key>
+		<dict>
+			<key>status</key>
+			<integer>1</integer>
+			<key>version</key>
+			<string>$sdkVersions.push</string>
+		</dict>
+		<key>feedback_service</key>
+		<dict>
+			<key>status</key>
+			<integer>1</integer>
+			<key>version</key>
+			<string>${sdkVersions.feedback}</string>
+		</dict>
+		<key>man_service</key>
+		<dict>
+			<key>status</key>
+			<integer>0</integer>
+			<key>version</key>
+			<string>${sdkVersions.man}</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,6 +1,7 @@
 /********* UbibotPluginAliyun.m Cordova Plugin Implementation *******/
 
 #import <Cordova/CDV.h>
+#import <CloudPushSDK/CloudPushSDK.h>
 
 @interface UbibotPluginAliyun : CDVPlugin {
   // Member variables go here.
@@ -34,6 +35,14 @@
     NSString* echo = [command.arguments objectAtIndex:0];
 
     NSLog(@"UbibotPluginAliyun test print...%@", echo);
+
+    [CloudPushSDK autoInit:^(CloudPushCallbackResult *res) {
+        if (res.success) {
+            NSLog(@"Push SDK init success, deviceId: %@.", [CloudPushSDK getDeviceId]);
+        } else {
+            NSLog(@"Push SDK init failed, error: %@", res.error);
+        }
+    }];
 
     if (echo != nil && [echo length] > 0) {
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:echo];

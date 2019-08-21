@@ -6,6 +6,7 @@
     <js-module name="UbibotPluginAliyun" src="www/UbibotPluginAliyun.js">
         <clobbers target="cordova.plugins.UbibotPluginAliyun" />
     </js-module>
+
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
             <feature name="UbibotPluginAliyun">
@@ -13,7 +14,16 @@
             </feature>
         </config-file>
         <source-file src="src/ios/UbibotPluginAliyun.m" />
+
+        <resource-file src="AliyunEmasServices-Info.plist" />
+
+        <framework src="libs/ios/AlicloudUtils.framework" embed="true" custom="true" />
+        <framework src="libs/ios/CloudPushSDK.framework" embed="true" custom="true" />
+        <framework src="libs/ios/UTDID.framework" embed="true" custom="true" />
+        <framework src="libs/ios/UTMini.framework" embed="true" custom="true" />
+
     </platform>
+
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="UbibotPluginAliyun">

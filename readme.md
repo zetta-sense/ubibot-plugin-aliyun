@@ -35,3 +35,7 @@ pending
 
 cordova clean
 
+#### 阿里emas接入
+
+https://help.aliyun.com/document_detail/69733.html?spm=5176.13194971.0.0.7f71cb3cezUa9F
+

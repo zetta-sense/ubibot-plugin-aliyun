@@ -1,4 +1,4 @@
-package ubibot-plugin-aliyun;
+package ubibot.plugin.aliyun;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;

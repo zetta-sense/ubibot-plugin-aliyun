@@ -1,0 +1,17 @@
+{
+  "name": "ubibot-plugin-aliyun",
+  "version": "0.1.0",
+  "description": "",
+  "cordova": {
+    "id": "ubibot-plugin-aliyun",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "gorebill",
+  "license": "ISC"
+}

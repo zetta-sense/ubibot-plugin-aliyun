@@ -35,6 +35,8 @@ public class UbibotPluginAliyun extends CordovaPlugin {
     }
 
     private void test(String message, CallbackContext callbackContext) {
+        System.out.println("Call UbibotPluginAliyun test: " + message);
+
         if (message != null && message.length() > 0) {
             callbackContext.success(message);
         } else {

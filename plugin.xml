@@ -22,6 +22,12 @@
         <framework src="libs/ios/UTDID.framework" embed="true" custom="true" />
         <framework src="libs/ios/UTMini.framework" embed="true" custom="true" />
 
+        <framework src="libz.tbd" framework="true"/>
+        <framework src="libresolv.tbd" />
+        <framework src="CoreTelephony.framework" />
+        <framework src="SystemConfiguration.framework" />
+        <framework src="UserNotifications.framework" />
+        <framework src="libsqlite3.tbd" />
     </platform>
 
     <platform name="android">

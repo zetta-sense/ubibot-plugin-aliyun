@@ -3,7 +3,7 @@
 
 ### UbiBot APP 插件
 
-plugman create --name UbibotPluginZendesk --plugin_id ubibot-plugin-zendesk --plugin_version 0.1.0
+plugman create --name UbibotPluginAliyun --plugin_id ubibot-plugin-aliyun --plugin_version 0.1.0
 
 plugman platform add --platform_name android
 

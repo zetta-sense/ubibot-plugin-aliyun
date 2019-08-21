@@ -22,12 +22,12 @@
         <framework src="libs/ios/UTDID.framework" embed="true" custom="true" />
         <framework src="libs/ios/UTMini.framework" embed="true" custom="true" />
 
-        <source-file src="libz.tbd" target-dir="lib" framework="true" />
-        <source-file src="libresolv.tbd" target-dir="lib" framework="true" />
-        <source-file src="CoreTelephony.framework" target-dir="lib" framework="true" />
-        <source-file src="SystemConfiguration.framework" target-dir="lib" framework="true" />
-        <source-file src="UserNotifications.framework" target-dir="lib" framework="true" />
-        <source-file src="libsqlite3.tbd" target-dir="lib" framework="true" />
+        <framework src="libz.tbd" framework="true"/>
+        <framework src="libresolv.tbd" framework="true" />
+        <framework src="CoreTelephony.framework" framework="true"/>
+        <framework src="SystemConfiguration.framework" framework="true"/>
+        <framework src="UserNotifications.framework" framework="true"/>
+        <framework src="libsqlite3.tbd" framework="true"/>
     </platform>
 
     <platform name="android">
